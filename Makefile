@@ -63,7 +63,7 @@ clean:
 	-rm -rf relaxgl.fi definit.f diffusive.f gmetric.f limiter.f
 	-rm -f mgtemplate.f radiation.f stepghp.f $(ARCHRM)
 	-rm -f gmetric.fi $(OBJS)  *.list nbody.fi cold.fi
-	-rm Make.
+	-rm Make. gridtest.f
 
 pps:
 	pps -l fortran relaxing.fpp | multi -2 | lpr
