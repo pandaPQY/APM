@@ -6,13 +6,15 @@
       subroutine grid
       implicit none
       include 'relaxgl.fi'
+      include 'globalpa.fi'
 
-      real u(1,ng1,ng2,ng3), def(ng1,ng2,ng3), tmp(ng1,ng2,ng3)
+      real u(nstore,ng1,ng2,ng3), def(ng1,ng2,ng3), tmp(ng1,ng2,ng3)
      &     ,defp(ng1,ng2,ng3),phi(ng1,ng2,ng3), tmp2(ng1+2,ng2,ng3)
       real*4 tmp4(ng1,ng2,ng3)
       integer i
 
       u=0
+      compressmax=10
 
       open(10,file='cube.dat',access='stream')
       read(10) tmp4
@@ -21,8 +23,11 @@
       write(*,*) sum(u)
       def=0
       do i=1,10
-         call calcdefp(defp,tmp,tmp2,def,u,1.,1.,1)
+         call calcdefp(defp,tmp,tmp2,def,u,1.,1.,5)
          def=def+defp
+         call relaxing(u,def,defp,1.,1.,5)
       enddo
+
+      
 
       end

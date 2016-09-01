@@ -62,7 +62,7 @@ cmydist baj(*,*,*,block)
 c for adaptive initial conditions:
       real*4 densinit(ng1,ng2,ng3)
 cmydist densinit(*,block,*)
-      common /densi/densinit
+      !common /densi/densinit
 c each component is a real number specifying the initial \rho \rg in each
 c cell
 
@@ -75,12 +75,14 @@ c fool OMP to accept a nonexistent variable
 #ifdef GMETRIC
       include 'gmetric.fi'
 #endif
+       densinit=1
 
 #ifdef FIXEDGRID      
 c we want to recycle the tmp array to be of two different sizes
 c (not any more, that caused too much grief, better to be clean)
 c but note that algorithmically, tmp and tmp2 might be equivalenced.      
 c the distribution of the second tmp can be problematic.
+      
 
       do k=1,ng3
       do j=1,ng2

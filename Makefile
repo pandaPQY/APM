@@ -17,11 +17,12 @@ CPP=/lib/cpp
 #PROJOBJS=szmhproj.o xveucl.o wgif.o compress.o wimage.o projdm.o projphidot.o \
 #	util.o squeeze.o
 
-OBJS1=limiter.o gridtest.o multigrid.o gauss1.o mgutil.o genericfft.o gfftnoopt.o
+OBJS1=limiter.o gridtest.o multigrid.o gauss1.o mgutil.o genericfft.o \
+	gfftnoopt.o relaxing.o tutil.o
 OBJS=$(OBJS1)
 OUTFOPT=-o 
 # the fc may be overriden by the machine specific Makefile
-CFLAGS=-g #$(AFLAGS) 
+CFLAGS=-g -ffpe-trip=invalid #$(AFLAGS) 
 include Make.$(ARCH)
 # add -DPROJOUT to generate gif images, etc.
 CPPFLAGS=$(ARCHCPP) -DDEBUG=$(DEBUG) -DnoEXACTENERGY  -DCOLD -DNBODY #-DFIXEDGRID #-DP3M  #-DPROJOUT #-DGMETRIC -DVELDEFP
@@ -63,7 +64,7 @@ clean:
 	-rm -rf relaxgl.fi definit.f diffusive.f gmetric.f limiter.f
 	-rm -f mgtemplate.f radiation.f stepghp.f $(ARCHRM)
 	-rm -f gmetric.fi $(OBJS)  *.list nbody.fi cold.fi
-	-rm Make. gridtest.f
+	-rm -f Make. gridtest.f
 
 pps:
 	pps -l fortran relaxing.fpp | multi -2 | lpr
