@@ -10,7 +10,7 @@ F90=f90
 FLD=$(FC) 
 # Note: if you doesn't use -r8, modify the FFT and DLARNV accordingly.
 FFLAGSB=-cpp -fdefault-real-8 #-r8
-CPP=/lib/cpp
+CPP=cpp
 .SUFFIXES: .fip .fi .fpp .f .f90
 # the next line needs to be commented if there it no PROJOUT and
 # the files wont compile
@@ -80,21 +80,19 @@ pps:
 	$(CPP) $(CPPFLAGS) $< | grep -v '^#' > $@ || rm $@
 	chmod -w $@
 
-.fpp.f:
-	-rm -f $@
-	cp -p $<  $@ || rm $@
-	chmod -w $@
+.fpp.o:
+	$(FC) $(FFLAGS) -c $<
 
-relaxing.f: relaxgl.fi nbody.fi gmetric.fi cold.fi
+relaxing.o: relaxgl.fi nbody.fi gmetric.fi cold.fi
 drivers.f: relaxgl.fi nbody.fi cold.fi
 stepghp.f: nbody.fi relaxgl.fi
 relaxgl.fi: dimen.fh
-multigrid.f: dimen.fh mgtemplate.fpp
-mgutil.f: mgutil.fpp relaxgl.fi
+multigrid.o: dimen.fh mgtemplate.fpp
+mgutil.o: mgutil.fpp relaxgl.fi
 definit.f: relaxgl.fi
-gauss1.f: relaxgl.fi gmetric.fi
-limiter.f: relaxgl.fi cold.fi
-gridtest.f: relaxgl.fi 
+gauss1.o: relaxgl.fi gmetric.fi
+limiter.o: relaxgl.fi cold.fi
+gridtest.o: relaxgl.fi 
 
 sgenericfft.f: genericfft.f
 	rm -f $@

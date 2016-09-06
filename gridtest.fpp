@@ -16,18 +16,24 @@
       u=0
       compressmax=10
 
-      open(10,file='cube.dat',access='stream')
+      open(10,file='cube_fine.dat',access='stream')
       read(10) tmp4
       u(1,:,:,:)=tmp4+1
 
       write(*,*) sum(u)
       def=0
-      do i=1,10
+      do i=1,100
          call calcdefp(defp,tmp,tmp2,def,u,1.,1.,5)
          def=def+defp
          call relaxing(u,def,defp,1.,1.,5)
       enddo
 
+			tmp4=def
+      open(10,file='def.dat',access='stream')
+      write(10) tmp4
+			tmp4=u(1,:,:,:)
+      open(10,file='rhorg.dat',access='stream')
+      write(10) tmp4
       
 
       end
