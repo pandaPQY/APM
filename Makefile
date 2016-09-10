@@ -1,11 +1,12 @@
 # global makefile
+#
 # written 11/5/97 by Ue-Li Pen
 #
 ARCH=GENERIC  # currently relying on environment variable ARCH being set
 #ARCH=$(ARCH?$(ARCH):GENERIC)
 DEBUG=1
 ARCHOBJS1=dlarnv.o
-FC=time gfortran
+FC=time ifort -mcmodel=large
 F90=f90
 FLD=$(FC) 
 # Note: if you doesn't use -r8, modify the FFT and DLARNV accordingly.
@@ -20,15 +21,15 @@ CPP=cpp
 OBJS1=limiter.o gridtest.o multigrid.o gauss1.o mgutil.o genericfft.o \
 	gfftnoopt.o relaxing.o tutil.o
 OBJS=$(OBJS1)
-OUTFOPT=-o 
+OUTFOPT=-o
 # the fc may be overriden by the machine specific Makefile
 CFLAGS=-g -ffpe-trip=invalid #$(AFLAGS) 
 include Make.$(ARCH)
 # add -DPROJOUT to generate gif images, etc.
 CPPFLAGS=$(ARCHCPP) -DDEBUG=$(DEBUG) -DnoEXACTENERGY  -DCOLD -DNBODY #-DFIXEDGRID #-DP3M  #-DPROJOUT #-DGMETRIC -DVELDEFP
 # -DFIXEDGRID prevents grid deformation
-FFLAGS=$(FOPTFLAGS) $(FFLAGSB)  $(MPFLAGS) 
-#FFLAGS=-g -r8
+#FFLAGS=$(FOPTFLAGS) $(FFLAGSB)  $(MPFLAGS) 
+FFLAGS=-O0 -g -r8 -fpe0
 #LDFLAGS=#$(FOPTFLAGS) $(MPFLAGS) 
 SOURCES=Makefile Make.alpha Make.SGI Make.SX5 gauss1.fpp relaxing.fpp \
 	Make.NT relaxgl.fip  cold.fip decfft.f definit.fpp \
@@ -43,7 +44,7 @@ SOURCES=Makefile Make.alpha Make.SGI Make.SX5 gauss1.fpp relaxing.fpp \
 	POSTPROCESSING/project1.f POSTPROCESSING/project_lambda.in
 
 relaxing.x: $(OBJS) 
-	-rm relaxing.x
+#	-rm relaxing.x
 	$(FLD) $(LDFLAGS) $(OUTFOPT)$@ $(OBJS) $(LDLIBS)
 
 run: relaxing.x

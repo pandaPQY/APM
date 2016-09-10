@@ -120,7 +120,7 @@ c unchanged since the last call to multigrid, this is superfluous.
          call mg512(u,rhs,defpot,ubig,dx,nu,iopt)
 #endif         
       else
-         write(*,*) 'multigrid: nx=',nx,'  not supported'
+         write(*,*) 'multigrid: nx,NG=',nx,NG,'  not supported'
          stop
       endif
       enddo
@@ -219,7 +219,7 @@ cdir$ end master
       end
 
 #endif
-      
+
 #define NMG 8
 #if NG >= NMG
 #include "mgtemplate.fpp"
@@ -234,7 +234,6 @@ cdir$ end master
 #if NG >= NMG
 #include "mgtemplate.fpp"
 #endif      
-
 
 #define NMG 64
 #if NG >= NMG
@@ -254,4 +253,5 @@ cdir$ end master
 #define NMG 512
 #if NG >= NMG
 #include "mgtemplate.fpp"
-#endif      
+#endif  
+    
