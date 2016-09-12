@@ -185,7 +185,7 @@ c the extra padding reduces bank conflicts.
 #define BAJI2 8+BAJ6      
 #endif
 c I think I actually only use baj(1:2*nrelax+1)
-
+#      
 #ifdef DYNAMIC_MEMORY
       real baj(BAJ6,BAJI2,na1,na2)
 cdir$ shared baj(:,:,:block,:block)
