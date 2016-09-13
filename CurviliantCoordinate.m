@@ -1,5 +1,6 @@
+
 clear;close all
-nf=64;
+nf=128;
 fid=fopen('newposition.dat');
 newposition=fread(fid,'real*4');
 fclose(fid);

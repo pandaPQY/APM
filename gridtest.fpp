@@ -16,8 +16,11 @@
       u=0
       compressmax=10
 
-      open(10,file='cube_fine.dat',access='stream')
+      !open(10,file='cube_corse.dat',status="old",access='stream')
+      open(10,file='cube_fine.dat',status="old",access='stream')
+
       read(10) tmp4
+      write(*,*) maxval(tmp4),minval(tmp4)
       u(1,:,:,:)=tmp4+1
 
       write(*,*) sum(u)

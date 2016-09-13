@@ -2,13 +2,13 @@ program linearinterpolate
 ! linear interpolate the density field form ng=32 to ng=64
   implicit none
 
-  integer,parameter :: ng=32
+  integer,parameter :: ng=64
   integer,parameter :: nf=ng*2
   real den(ng,ng,ng)
   real den_f(nf,nf,nf)
   integer i,j,k
 
-  open(11,file='cube.dat',access='stream')
+  open(11,file='cube_corse.dat',access='stream')
 
   do k=1,ng
   do j=1,ng

@@ -3,7 +3,7 @@ program gridfigure
   implicit none
 
 
-  integer,parameter :: nf=64
+  integer,parameter :: nf=128
   real def(nf,nf,nf)
   real dispdef(3,nf,nf,nf)
 

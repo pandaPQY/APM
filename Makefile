@@ -11,7 +11,7 @@ FLD=$(FC)
 # Note: if you doesn't use -r8, modify the FFT and DLARNV accordingly.
 FFLAGSB=-cpp -fdefault-real-8 #-r8
 CPP=cpp
-.SUFFIXES: .fip .fi .fpp .f .f90
+.SUFFIXES: .fip .fi .f .fpp .f90
 # the next line needs to be commented if there it no PROJOUT and
 # the files wont compile
 #PROJOBJS=szmhproj.o xveucl.o wgif.o compress.o wimage.o projdm.o projphidot.o \
@@ -22,13 +22,13 @@ OBJS1=limiter.o gridtest.o multigrid.o gauss1.o mgutil.o genericfft.o \
 OBJS=$(OBJS1)
 OUTFOPT=-o 
 # the fc may be overriden by the machine specific Makefile
-CFLAGS=-g -ffpe-trip=invalid #$(AFLAGS) 
+CFLAGS=-O3 -ffpe-trip=invalid #$(AFLAGS) 
 include Make.$(ARCH)
 # add -DPROJOUT to generate gif images, etc.
 CPPFLAGS=$(ARCHCPP) -DDEBUG=$(DEBUG) -DnoEXACTENERGY  -DCOLD -DNBODY #-DFIXEDGRID #-DP3M  #-DPROJOUT #-DGMETRIC -DVELDEFP
 # -DFIXEDGRID prevents grid deformation
-FFLAGS=$(FOPTFLAGS) $(FFLAGSB)  $(MPFLAGS) 
-#FFLAGS=-g -r8
+FLAGS=$(FOPTFLAGS) $(FFLAGSB)  $(MPFLAGS) 
+#FFLAGS=-O -r8
 #LDFLAGS=#$(FOPTFLAGS) $(MPFLAGS) 
 SOURCES=Makefile Make.alpha Make.SGI Make.SX5 gauss1.fpp relaxing.fpp \
 	Make.NT relaxgl.fip  cold.fip decfft.f definit.fpp \
@@ -57,7 +57,7 @@ mhydro.tar: $(SOURCES)
 	tar cvf mhydro.tar $(SOURCES)
 
 clean:
-	-rm -f core relaxing.f mg.f gauss1.f drivers.f gauss1.f
+	-rm -f core relaxing.f mg.f gauss1.f drivers.f 
 	-rm -f *.anl *.L *.m *.o *.cmp.f multigrid.f fort.* mgutil.f
 	-rm -f *~ *.l *.out relaxing.x stepghp.f relaxgl.fi so_locations
 	-rm -rf Z.* *_chk* prho.dat limiter.f sgenericfft.f rii_files
