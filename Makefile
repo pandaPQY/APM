@@ -5,11 +5,12 @@ ARCH=GENERIC  # currently relying on environment variable ARCH being set
 #ARCH=$(ARCH?$(ARCH):GENERIC)
 DEBUG=1
 ARCHOBJS1=dlarnv.o
-FC=time gfortran
+FC=time ifort
 F90=f90
 FLD=$(FC) 
 # Note: if you doesn't use -r8, modify the FFT and DLARNV accordingly.
-FFLAGSB=-cpp -fdefault-real-8 #-r8
+#FFLAGSB=-cpp -fdefault-real-8 #-r8
+FFLAGSB= -r8 -mcmodel=medium
 CPP=cpp
 .SUFFIXES: .fip .fi .f .fpp .f90
 # the next line needs to be commented if there it no PROJOUT and

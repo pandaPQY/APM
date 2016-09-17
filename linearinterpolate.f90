@@ -2,7 +2,8 @@ program linearinterpolate
 ! linear interpolate the density field form ng=32 to ng=64
   implicit none
 
-  integer,parameter :: ng=64
+  integer,parameter :: ng=128
+
   integer,parameter :: nf=ng*2
   real den(ng,ng,ng)
   real den_f(nf,nf,nf)

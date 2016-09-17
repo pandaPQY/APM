@@ -29,6 +29,8 @@
          call calcdefp(defp,tmp,tmp2,def,u,1.,1.,5)
          def=def+defp
          call relaxing(u,def,defp,1.,1.,5)
+    
+  
       enddo
 
 			tmp4=def
