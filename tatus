@@ -1,0 +1,100 @@
+commit 0fe7373d93036a5c0712c49fcffe71612e625fc2
+Author: pandaPQY <panda@mail.nankai.edu.cn>
+Date:   Tue Sep 13 11:44:05 2016 -0400
+
+    change the NG to be 128, data is from delta_cdm_256(version 2)
+
+commit ef8b4c5902c517718ed0f8525b2e085eabc10f63
+Author: pandaPQY <panda@mail.nankai.edu.cn>
+Date:   Tue Sep 13 11:36:23 2016 -0400
+
+    change the NG to be 128, data is from delta_cdm_256
+
+commit 818a4b66e3da98955295b077a290120e847e4467
+Merge: 87d1d9b 709a8da
+Author: pandaPQY <panda@mail.nankai.edu.cn>
+Date:   Mon Sep 12 12:57:54 2016 -0400
+
+    Merge branch 'master' of ssh://github.com/pandaPQY/APM
+
+commit 87d1d9bc08152cd0cf858d79dfaa32b197ab8435
+Author: pandaPQY <panda@mail.nankai.edu.cn>
+Date:   Mon Sep 12 12:56:51 2016 -0400
+
+    restore to c5ddfb883c50d; remove *.dat
+
+commit 54af7b2e4ab0072a7188876bfa811c67fdc0472a
+Author: pandaPQY <panda@mail.nankai.edu.cn>
+Date:   Mon Sep 12 12:52:30 2016 -0400
+
+    ignore *.dat from now on; restored CurviliantCoordinate.m
+
+commit 709a8da696567cf7988eb878614ed28f9bafe7f3
+Author: pandaPQY <panda@mail.nankai.edu.cn>
+Date:   Mon Sep 12 12:52:30 2016 -0400
+
+    ignore *.dat from now on; restore to dfb883c50d
+
+commit b7e9ec4e22c8508c1d02a69be6c04b82a50b010e
+Author: pandaPQY <panda@mail.nankai.edu.cn>
+Date:   Fri Sep 9 22:31:52 2016 -0400
+
+    test 1
+
+commit d03becd6b4b05615da791871577c5ddfb883c50d
+Author: pandaPQY <panda@mail.nankai.edu.cn>
+Date:   Wed Sep 7 16:44:09 2016 -0400
+
+    correct version of the deformation mesh
+
+commit b911aae234fdfc96610b7a2b97bbe8861b10907d
+Author: Cherry Pun <panda@Haorans-MacBook.local>
+Date:   Tue Sep 6 14:46:57 2016 -0400
+
+    updated Sept.6
+
+commit 4ca4027eb593ba4eff37d220f3270fc4a36b2f13
+Author: Cherry Pun <panda@Haorans-MacBook.local>
+Date:   Tue Sep 6 10:19:11 2016 -0400
+
+    updated makefile to work on OSX
+    changed dimen 64
+    save output file
+
+commit d5eb78b2cde3ed1369b3fa28a18c1aed6c5fc6d4
+Author: Qiaoyin Pan <qiaoyin@prawn.cita.utoronto.ca>
+Date:   Thu Sep 1 11:25:53 2016 -0400
+
+    seems to run after fixing limiter
+
+commit 9e28556a06fe10b7f3f84ff2bbb280e25b27fb97
+Author: Qiaoyin Pan <qiaoyin@prawn.cita.utoronto.ca>
+Date:   Thu Sep 1 11:09:19 2016 -0400
+
+    removed .f files
+
+commit 2ebc153258c86b36989b44775ee3164f7d420dae
+Author: Qiaoyin Pan <qiaoyin@prawn.cita.utoronto.ca>
+Date:   Thu Sep 1 11:03:33 2016 -0400
+
+    extracted minimal file set to solve for constant density distortions.
+    Only updates defp right now.
+
+commit ee207507f2728b49a0527378e1b477f475fd0445
+Merge: c930742 a327f49
+Author: Qiaoyin Pan <qiaoyin@coyote.cita.utoronto.ca>
+Date:   Thu Sep 1 10:58:25 2016 -0400
+
+    Merge branch 'master' of https://github.com/pandaPQY/pen
+
+commit a327f49366658c071aeda8cf17d46b8ec8453a70
+Author: pandaPQY <panda@mail.nankai.edu.cn>
+Date:   Thu Sep 1 10:57:32 2016 -0400
+
+    Create README.md
+
+commit c930742eca3e6547c217a2313b7381066e8bdfbe
+Author: Qiaoyin Pan <qiaoyin@coyote.cita.utoronto.ca>
+Date:   Thu Sep 1 10:53:18 2016 -0400
+
+    first commit

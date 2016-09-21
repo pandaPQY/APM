@@ -3,13 +3,15 @@ program linearinterpolate
   implicit none
 
   integer,parameter :: ng=128
-
+!  integer,parameter :: ng=64
   integer,parameter :: nf=ng*2
   real den(ng,ng,ng)
   real den_f(nf,nf,nf)
   integer i,j,k
-
-  open(11,file='cube_corse.dat',access='stream')
+  
+!  open(11,file='cube_corse.dat',access='stream')
+!  open(11,file='cube_ccorse.dat',access='stream')
+  open(11,file='cube_fine.dat',access='stream')
 
   do k=1,ng
   do j=1,ng
@@ -41,8 +43,8 @@ program linearinterpolate
   enddo
   enddo
   enddo
-
-  open(12,file='cube_fine.dat',access='stream')
+  open(12,file='cube_ffine.dat',access='stream')
+!  open(12,file='cube_fine.dat',access='stream')
   write(12) den_f
   close(12)
 

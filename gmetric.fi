@@ -1,0 +1,4 @@
+c
+c provides the option of storing a global copy of the inverse metric
+c tensor to save time and coding.
+c

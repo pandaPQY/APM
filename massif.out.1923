@@ -1,0 +1,767 @@
+desc: (none)
+cmd: ./a.out
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=174279
+mem_heap_B=280
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=174409
+mem_heap_B=400
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=179738
+mem_heap_B=405
+mem_heap_extra_B=51
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=181137
+mem_heap_B=429
+mem_heap_extra_B=67
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=181176
+mem_heap_B=941
+mem_heap_extra_B=75
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=181237
+mem_heap_B=1221
+mem_heap_extra_B=91
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=181388
+mem_heap_B=1341
+mem_heap_extra_B=107
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=181597
+mem_heap_B=1347
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=181716
+mem_heap_B=1371
+mem_heap_extra_B=141
+mem_stacks_B=0
+heap_tree=detailed
+n1: 1371 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 1371 0x5B49F67: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n2: 560 0x5BF50A0: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF53A2: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF547A: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n1: 512 0x5BFAF28: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 512 0x5BF5451: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 512 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 512 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 512 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n2: 240 0x5BF6198: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF53AA: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF5482: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n2: 48 0x5BFAF16: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 24 0x5BF5451: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 24 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 24 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 24 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 24 0x5BF5522: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 24 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 24 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 24 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n0: 11 in 2 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=10
+#-----------
+time=181755
+mem_heap_B=1883
+mem_heap_extra_B=149
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=181816
+mem_heap_B=2163
+mem_heap_extra_B=165
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=181988
+mem_heap_B=2283
+mem_heap_extra_B=181
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=182194
+mem_heap_B=2289
+mem_heap_extra_B=199
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=182311
+mem_heap_B=2313
+mem_heap_extra_B=215
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=182350
+mem_heap_B=2569
+mem_heap_extra_B=223
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=188905
+mem_heap_B=2604
+mem_heap_extra_B=244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=196457
+mem_heap_B=2884
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=199858
+mem_heap_B=3004
+mem_heap_extra_B=276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=200002
+mem_heap_B=11196
+mem_heap_extra_B=284
+mem_stacks_B=0
+heap_tree=detailed
+n2: 11196 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 11161 0x5B49F67: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n1: 8192 0x5BF6287: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 8192 0x5BEE24D: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 8192 0x5BEEB51: _gfortran_st_open (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 8192 0x40099F: MAIN__ (in /cita/h/home-2/qiaoyin/APM/a.out)
+      n0: 8192 0x4013D8: main (in /cita/h/home-2/qiaoyin/APM/a.out)
+  n3: 1280 0x5BFAF28: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 512 0x5BF5451: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 512 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 512 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 512 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 512 0x5BF5522: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 512 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 512 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 512 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 256 0x5BF55F6: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 256 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 256 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 256 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n4: 1120 0x5BF50A0: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF53A2: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF547A: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF554B: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF59AD: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5BEEAD6: _gfortran_st_open (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x40099F: MAIN__ (in /cita/h/home-2/qiaoyin/APM/a.out)
+      n0: 280 0x4013D8: main (in /cita/h/home-2/qiaoyin/APM/a.out)
+  n4: 480 0x5BF6198: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF53AA: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF5482: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF5553: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BEE24D: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5BEEB51: _gfortran_st_open (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x40099F: MAIN__ (in /cita/h/home-2/qiaoyin/APM/a.out)
+      n0: 120 0x4013D8: main (in /cita/h/home-2/qiaoyin/APM/a.out)
+  n0: 89 in 4 places, all below massif's threshold (01.00%)
+ n0: 35 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=20
+#-----------
+time=200054
+mem_heap_B=11209
+mem_heap_extra_B=295
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=36169875
+mem_heap_B=11209
+mem_heap_extra_B=295
+mem_stacks_B=0
+heap_tree=peak
+n2: 11209 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 11174 0x5B49F67: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n1: 8192 0x5BF6287: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 8192 0x5BEE24D: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 8192 0x5BEEB51: _gfortran_st_open (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 8192 0x40099F: MAIN__ (in /cita/h/home-2/qiaoyin/APM/a.out)
+      n0: 8192 0x4013D8: main (in /cita/h/home-2/qiaoyin/APM/a.out)
+  n3: 1280 0x5BFAF28: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 512 0x5BF5451: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 512 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 512 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 512 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 512 0x5BF5522: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 512 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 512 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 512 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 256 0x5BF55F6: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 256 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 256 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 256 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n4: 1120 0x5BF50A0: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF53A2: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF547A: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF554B: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF59AD: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5BEEAD6: _gfortran_st_open (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x40099F: MAIN__ (in /cita/h/home-2/qiaoyin/APM/a.out)
+      n0: 280 0x4013D8: main (in /cita/h/home-2/qiaoyin/APM/a.out)
+  n4: 480 0x5BF6198: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF53AA: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF5482: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF5553: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BEE24D: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5BEEB51: _gfortran_st_open (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x40099F: MAIN__ (in /cita/h/home-2/qiaoyin/APM/a.out)
+      n0: 120 0x4013D8: main (in /cita/h/home-2/qiaoyin/APM/a.out)
+  n0: 102 in 5 places, all below massif's threshold (01.00%)
+ n0: 35 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=22
+#-----------
+time=36169875
+mem_heap_B=3017
+mem_heap_extra_B=287
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=36171196
+mem_heap_B=2897
+mem_heap_extra_B=271
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=36171306
+mem_heap_B=2884
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=36171362
+mem_heap_B=2604
+mem_heap_extra_B=244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=415504906
+mem_heap_B=2884
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=415505828
+mem_heap_B=3004
+mem_heap_extra_B=276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=415505972
+mem_heap_B=11196
+mem_heap_extra_B=284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=415506024
+mem_heap_B=11211
+mem_heap_extra_B=293
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=416602257
+mem_heap_B=3019
+mem_heap_extra_B=285
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=416602309
+mem_heap_B=2899
+mem_heap_extra_B=269
+mem_stacks_B=0
+heap_tree=detailed
+n2: 2899 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 2864 0x5B49F67: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n3: 1280 0x5BFAF28: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 512 0x5BF5451: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 512 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 512 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 512 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 512 0x5BF5522: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 512 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 512 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 512 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 256 0x5BF55F6: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 256 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 256 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 256 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n4: 1120 0x5BF50A0: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF53A2: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF547A: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF554B: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF59AD: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n2: 280 0x5BEEAD6: _gfortran_st_open (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x4010CC: MAIN__ (in /cita/h/home-2/qiaoyin/APM/a.out)
+      n0: 280 0x4013D8: main (in /cita/h/home-2/qiaoyin/APM/a.out)
+     n0: 0 in 1 place, below massif's threshold (01.00%)
+  n4: 360 0x5BF6198: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF53AA: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF5482: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF5553: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n0: 0 in 1 place, below massif's threshold (01.00%)
+  n1: 72 0x5BFAF16: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n0: 72 in 3 places, all below massif's threshold (01.00%)
+  n0: 32 in 5 places, all below massif's threshold (01.00%)
+ n1: 35 0x5B49EC6: _gfortran_store_exe_path (in /usr/lib64/libgfortran.so.3.0.0)
+  n0: 35 0x4013C9: main (in /cita/h/home-2/qiaoyin/APM/a.out)
+#-----------
+snapshot=32
+#-----------
+time=416602350
+mem_heap_B=2884
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=416603105
+mem_heap_B=3004
+mem_heap_extra_B=276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=416603249
+mem_heap_B=11196
+mem_heap_extra_B=284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=416603301
+mem_heap_B=11210
+mem_heap_extra_B=294
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=416603742
+mem_heap_B=3018
+mem_heap_extra_B=286
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=416603794
+mem_heap_B=2898
+mem_heap_extra_B=270
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=416603879
+mem_heap_B=2884
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=416603935
+mem_heap_B=2604
+mem_heap_extra_B=244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=416612586
+mem_heap_B=2660
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=416614477
+mem_heap_B=2604
+mem_heap_extra_B=244
+mem_stacks_B=0
+heap_tree=detailed
+n2: 2604 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 2569 0x5B49F67: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n3: 1280 0x5BFAF28: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 512 0x5BF5451: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 512 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 512 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 512 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 512 0x5BF5522: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 512 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 512 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 512 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 256 0x5BF55F6: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 256 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 256 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 256 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n4: 840 0x5BF50A0: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF53A2: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF547A: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF554B: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n0: 0 in 1 place, below massif's threshold (01.00%)
+  n4: 360 0x5BF6198: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF53AA: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF5482: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF5553: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n0: 0 in 1 place, below massif's threshold (01.00%)
+  n1: 72 0x5BFAF16: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n0: 72 in 3 places, all below massif's threshold (01.00%)
+  n0: 17 in 6 places, all below massif's threshold (01.00%)
+ n1: 35 0x5B49EC6: _gfortran_store_exe_path (in /usr/lib64/libgfortran.so.3.0.0)
+  n0: 35 0x4013C9: main (in /cita/h/home-2/qiaoyin/APM/a.out)
+#-----------
+snapshot=42
+#-----------
+time=416619257
+mem_heap_B=2660
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=416619870
+mem_heap_B=2604
+mem_heap_extra_B=244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=416630739
+mem_heap_B=2484
+mem_heap_extra_B=228
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=416630817
+mem_heap_B=2478
+mem_heap_extra_B=210
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=416630860
+mem_heap_B=2222
+mem_heap_extra_B=202
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=416630891
+mem_heap_B=2198
+mem_heap_extra_B=186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=416630937
+mem_heap_B=1918
+mem_heap_extra_B=170
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=416631003
+mem_heap_B=1798
+mem_heap_extra_B=154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=416631086
+mem_heap_B=1792
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=416631129
+mem_heap_B=1280
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1280 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 1245 0x5B49F67: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+  n3: 560 0x5BF50A0: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF53A2: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 280 0x5BF547A: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 280 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 280 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 280 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+  n2: 512 0x5BFAF28: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 512 0x5BF5451: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 512 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 512 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 512 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+  n2: 120 0x5BF6198: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 120 0x5BF53AA: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 120 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 120 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 120 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n0: 0 in 3 places, all below massif's threshold (01.00%)
+  n3: 48 0x5BFAF16: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 24 0x5BF5451: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 24 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 24 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 24 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n1: 24 0x5BF5522: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+    n1: 24 0x5B49E26: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+     n1: 24 0x5C08C84: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+      n0: 24 0x5B46969: ??? (in /usr/lib64/libgfortran.so.3.0.0)
+   n0: 0 in 1 place, below massif's threshold (01.00%)
+  n0: 5 in 6 places, all below massif's threshold (01.00%)
+ n1: 35 0x5B49EC6: _gfortran_store_exe_path (in /usr/lib64/libgfortran.so.3.0.0)
+  n0: 35 0x4013C9: main (in /cita/h/home-2/qiaoyin/APM/a.out)
+#-----------
+snapshot=52
+#-----------
+time=416631160
+mem_heap_B=1256
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=416631206
+mem_heap_B=976
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=416631272
+mem_heap_B=856
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=416631350
+mem_heap_B=851
+mem_heap_extra_B=61
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=416631393
+mem_heap_B=339
+mem_heap_extra_B=53
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=416631424
+mem_heap_B=315
+mem_heap_extra_B=37
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=416631470
+mem_heap_B=35
+mem_heap_extra_B=21
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=416631519
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
