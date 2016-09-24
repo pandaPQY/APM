@@ -11,7 +11,7 @@ program gridcorse
   real cube_corse(nc,nc,nc)  
   real cube_ccorse(ncc,ncc,ncc)
 
-  open(10,file="delta_cdm.dat",access="stream")
+  open(10,file="delta_cdm_800Mpc_256.dat",access="stream")
      read(10) den
   close(10)
 
@@ -31,7 +31,7 @@ program gridcorse
      cube_ccorse(icc,jcc,kcc)=1.0/8.0*(cube_corse(2*icc-1,2*jcc-1,2*kcc-1)+cube_corse(2*icc,2*jcc-1,2*kcc-1)+       &
                                        cube_corse(2*icc-1,2*jcc,2*kcc-1)+cube_corse(2*icc-1,2*jcc-1,2*kcc)+         &
                                        cube_corse(2*icc,2*jcc,2*kcc-1)+cube_corse(2*icc,2*jcc-1,2*kcc)+             &
-                                     cube_corse(2*icc-1,2*jcc,2*kcc)+cube_corse(2*icc,2*jcc,2*kcc))
+                                       cube_corse(2*icc-1,2*jcc,2*kcc)+cube_corse(2*icc,2*jcc,2*kcc))
  enddo
  enddo
  enddo
@@ -43,6 +43,6 @@ program gridcorse
 !  write(11) cube_corse
   close(11)
 
-  print*, den(256,256,256),cube_corse(128,128,128),nc,ng,i,j,k,ic,jc,kc
+!  print*, den(256,256,256),cube_corse(128,128,128),nc,ng,i,j,k,ic,jc,kc
 
 end

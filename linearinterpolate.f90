@@ -12,6 +12,7 @@ program linearinterpolate
 !  open(11,file='cube_corse.dat',access='stream')
 !  open(11,file='cube_ccorse.dat',access='stream')
   open(11,file='cube_fine.dat',access='stream')
+!   open(11,file='delta_cdm_800Mpc_64.dat',access='stream')
 
   do k=1,ng
   do j=1,ng
