@@ -10,7 +10,8 @@ F90=f90
 FLD=$(FC) 
 # Note: if you doesn't use -r8, modify the FFT and DLARNV accordingly.
 #FFLAGSB=-cpp -fdefault-real-8 #-r8
-FFLAGSB= -r8 -mcmodel=medium
+RFLAG8=-r8
+FFLAGSB= -O3 $(RFLAG8) -mcmodel=medium
 CPP=cpp
 .SUFFIXES: .fip .fi .f .fpp .f90
 # the next line needs to be commented if there it no PROJOUT and
@@ -23,7 +24,7 @@ OBJS1=limiter.o gridtest.o multigrid.o gauss1.o mgutil.o genericfft.o \
 OBJS=$(OBJS1)
 OUTFOPT=-o 
 # the fc may be overriden by the machine specific Makefile
-CFLAGS=-O3 -ffpe-trip=invalid #$(AFLAGS) 
+CFLAGS=-g -ffpe-trip=invalid #$(AFLAGS) 
 include Make.$(ARCH)
 # add -DPROJOUT to generate gif images, etc.
 CPPFLAGS=$(ARCHCPP) -DDEBUG=$(DEBUG) -DnoEXACTENERGY  -DCOLD -DNBODY #-DFIXEDGRID #-DP3M  #-DPROJOUT #-DGMETRIC -DVELDEFP
@@ -45,7 +46,7 @@ SOURCES=Makefile Make.alpha Make.SGI Make.SX5 gauss1.fpp relaxing.fpp \
 
 relaxing.x: $(OBJS) 
 	-rm relaxing.x
-	$(FLD) $(LDFLAGS) $(OUTFOPT)$@ $(OBJS) $(LDLIBS)
+	$(FLD) -fpe0 $(LDFLAGS) $(OUTFOPT)$@ $(OBJS) $(LDLIBS)
 
 run: relaxing.x
 	nice -15 time ./relaxing.x
@@ -105,7 +106,8 @@ sgenericfft.o: sgenericfft.f
 
 gfftnoopt.o: gfftnoopt.f
 	echo Note that gfftnoopt should not be optimized
-	$(FC) -fdefault-real-8  -g -c $<
+	#$(FC) -O0 -fdefault-real-8  -g -c $<
+	$(FC) -O0 $(RFLAG8)  -g -c $<
 
 projdm.o: projdm.f nbody.fi
 	$(F90) -c $(FFLAGS) $<

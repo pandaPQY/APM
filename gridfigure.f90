@@ -3,22 +3,15 @@ program gridfigure
   implicit none
 
 
-  integer,parameter :: nf=256
+  integer,parameter :: nf=128
   real def(nf,nf,nf)
   real dispdef(3,nf,nf,nf)
 
   real newposition(3,nf,nf,nf)
   integer i,j,k,ip,jp,kp  
 
-  open(15,file='def.dat', access='stream')
-
-  do k=1,nf
-  do j=1,nf
-  do i=1,nf
-    read(15) def(i,j,k)
-  enddo
-  enddo
-  enddo
+  open(15,file='def.dat',status='old',access='stream')
+    read(15) def
   close(15)
 
   do k=1,nf
@@ -37,11 +30,11 @@ program gridfigure
   enddo
   enddo
 
-  open(15,file='newposition.dat',access='stream')
+  open(15,file='newposition.dat',status='replace',access='stream')
   write(15) newposition
   close(15)
  
-  open(15,file='dispdef.dat',access='stream')
+  open(15,file='dispdef.dat',status='replace',access='stream')
   write(15) dispdef
   close(15)
 

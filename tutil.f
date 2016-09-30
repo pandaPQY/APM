@@ -167,7 +167,7 @@ c  Use Richardson extrapolation.
 
 	open(101,file='adjthread.dat',status='old',err=100)
         read(101,*,err=110) newthread
-C$omp         call omp_set_num_threads(newthread)
+C$        call omp_set_num_threads(newthread)
         write(*,*) 'adjthread: set to ',newthread
 110     continue
         close(101)
@@ -175,4 +175,5 @@ C$omp         call omp_set_num_threads(newthread)
 100     continue
          return
         end
+
 

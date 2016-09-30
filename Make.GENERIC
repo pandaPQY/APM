@@ -1,7 +1,7 @@
 # compiler flags for generic compilers:
 LDLIBS=
 #FOPTFLAGS= -g -ffpe-trap=invalid,zero
-FOPTFLAGS= -O -fpe0
+FOPTFLAGS= -fpe0 
 ARCHOBJS=genericfft.o sgenericfft.o gfftnoopt.o
 FFLAGS=$(FOPTFLAGS) $(FFLAGSB)  $(MPFLAGS)
 
